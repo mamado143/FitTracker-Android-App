@@ -13,8 +13,7 @@ import com.example.navigationcomponent.databinding.FragmentFirst2Binding
  */
 class First2Fragment : Fragment() {
 
-    private var _binding: FragmentFirst2Binding? = null
-
+private var _binding: FragmentFirst2Binding? = null
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -24,8 +23,8 @@ class First2Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentFirst2Binding.inflate(inflater, container, false)
-        return binding.root
+      _binding = FragmentFirst2Binding.inflate(inflater, container, false)
+      return binding.root
 
     }
 
@@ -37,7 +36,7 @@ class First2Fragment : Fragment() {
         }
     }
 
-    override fun onDestroyView() {
+override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
