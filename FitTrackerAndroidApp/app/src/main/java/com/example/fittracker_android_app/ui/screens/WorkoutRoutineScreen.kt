@@ -15,10 +15,10 @@ fun WorkoutRoutineScreen(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Workout Routines", style = MaterialTheme.typography.bodyMedium)
+        Text(text = "Workout Routines", style = MaterialTheme.typography.bodyMedium,    onTextLayout = {})
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = { navController.navigate("real_time_tracking") }) {
-            Text(text = "Go to Real-Time Tracking")
+            Text(text = "Go to Real-Time Tracking",    onTextLayout = {})
         }
     }
 }

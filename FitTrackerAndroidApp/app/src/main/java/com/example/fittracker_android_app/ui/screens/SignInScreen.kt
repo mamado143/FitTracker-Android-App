@@ -15,10 +15,10 @@ fun SignInScreen(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Sign In", style = MaterialTheme.typography.bodyMedium)
+        Text(text = "Sign In", style = MaterialTheme.typography.bodyMedium,    onTextLayout = {})
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = { navController.navigate("profile") }) {
-            Text(text = "Sign In")
+            Text(text = "Sign In",    onTextLayout = {})
         }
     }
 }

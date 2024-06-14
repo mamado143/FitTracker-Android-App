@@ -1,18 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.kotlinAndroidKsp)
-    alias(libs.plugins.ksp)
-    alias(libs.plugins.hilt)
 
 }
-
 android {
-    namespace = "com.example.fittracker_android_app"
+    namespace = "com.example.tracker"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.fittracker_android_app"
+        applicationId = "com.example.tracker"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -51,8 +47,8 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-}
 
+}
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -63,8 +59,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.material3.android)
+    implementation(libs.support.annotations)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -72,6 +69,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation(libs.hilt.android)
-    implementation(libs.hilt.android)
 }
+

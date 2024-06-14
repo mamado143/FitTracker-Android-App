@@ -11,14 +11,23 @@ import androidx.navigation.NavHostController
 @Composable
 fun ProfileScreen(navController: NavHostController) {
     Column(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Profile", style = MaterialTheme.typography.bodyMedium)
+        Text(
+            text = "Profile",
+            style = MaterialTheme.typography.bodyMedium,
+            onTextLayout = {} // Explicitly specify onTextLayout to avoid ambiguity
+        )
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = { navController.navigate("workout_routines") }) {
-            Text(text = "Go to Workout Routines")
+            Text(text = "Go to Workout Routines",
+                onTextLayout = {}
+            )
+
         }
     }
 }

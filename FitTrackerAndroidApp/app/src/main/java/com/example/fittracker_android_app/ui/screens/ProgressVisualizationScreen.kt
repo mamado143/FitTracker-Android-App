@@ -15,10 +15,10 @@ fun ProgressVisualizationScreen(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Progress Visualization", style = MaterialTheme.typography.bodyMedium)
+        Text(text = "Progress Visualization", style = MaterialTheme.typography.bodyMedium,    onTextLayout = {})
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = { navController.navigate("sign_in") }) {
-            Text(text = "Back to Sign In")
+            Text(text = "Back to Sign In",    onTextLayout = {})
         }
     }
 }

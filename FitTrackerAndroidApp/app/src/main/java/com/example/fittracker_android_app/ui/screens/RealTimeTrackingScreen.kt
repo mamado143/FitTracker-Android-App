@@ -15,10 +15,10 @@ fun RealTimeTrackingScreen(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Real-Time Tracking", style = MaterialTheme.typography.bodyMedium)
+        Text(text = "Real-Time Tracking", style = MaterialTheme.typography.bodyMedium,    onTextLayout = {})
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = { navController.navigate("progress_visualization") }) {
-            Text(text = "Go to Progress Visualization")
+            Text(text = "Go to Progress Visualization",    onTextLayout = {})
         }
     }
 }
