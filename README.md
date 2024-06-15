@@ -1,5 +1,3 @@
-markdown
-Copy code
 # FitTracker-Android-App
 
 FitTracker is an Android application designed to help users manage and track their workout routines. The app allows users to create custom workout routines, track reps and sets in real-time, and visualize their progress over time. FitTracker aims to enhance the fitness journey by providing a comprehensive tool for monitoring and improving workouts.
